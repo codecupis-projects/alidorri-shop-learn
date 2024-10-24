@@ -1,0 +1,40 @@
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    border-top: rgb(239, 239, 239) solid 2px;
+    border-bottom: rgb(239, 239, 239) solid 2px;
+    padding: 5px;
+}
+
+.currency_language{
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.currency_language > div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body{
+    background-color: white;
+}
+
+.box_gray{
+    background-color: rgb(245, 245, 245);
+}
+
+
+.header_content{
+    
+}
