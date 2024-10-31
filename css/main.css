@@ -1,17 +1,16 @@
 @import url("reset.css");
 @import url("common.css");
 @import url("header.css");
+@import url("nav.css");
 
-
-
-
-
+.banners{
+    width: 100%;
+    height: 300px;
+}
 
 
 body{
     background-color: white;
+    height: 1000px;
 }
 
-.box_gray{
-    background-color: rgb(245, 245, 245);
-}

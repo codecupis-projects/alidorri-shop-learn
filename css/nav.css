@@ -1,0 +1,13 @@
+.nav-sticky{
+    position: sticky;
+    top: 0;
+}
+
+.main-nav{
+    width: 450px;
+    padding-bottom: 20px;
+}
+
+.main-nav *{
+    font-size: 1em;
+}

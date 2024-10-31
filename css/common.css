@@ -5,6 +5,18 @@
     margin: 0px;
 }
 
+.center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
 ul{
     list-style-type: none;
 }
@@ -34,4 +46,17 @@ button, .icon-button{
 .social i{
     color: #777777;
     font-size: 1em;
+}
+
+.drop-down{
+    color: #222222;
+}
+
+.drop-down:hover{
+    color: #edc36e;
+    transition: 0.5s;
+}
+
+.box-gray{
+    background-color: rgb(245, 245, 245);
 }
