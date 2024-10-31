@@ -1,0 +1,17 @@
+@import url("reset.css");
+@import url("common.css");
+@import url("header.css");
+
+
+
+
+
+
+
+body{
+    background-color: white;
+}
+
+.box_gray{
+    background-color: rgb(245, 245, 245);
+}

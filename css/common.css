@@ -1,0 +1,37 @@
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.page-width{
+    width: 1110px;
+}
+
+button, .icon-button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    justify-content: space-between;
+    width: 140px;
+}
+
+.social i{
+    color: #777777;
+    font-size: 1em;
+}

@@ -1,0 +1,43 @@
+.header_top{
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: rgb(239, 239, 239) solid 2px;
+}
+
+.header_top .page-width{
+    justify-content: space-between;
+}
+
+.currency_language{
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.currency_language > div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title{
+    justify-content: center;
+}
+
+.title .page-width{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo-corano{
+
+}
+
+.hud-buttons{
+    width: 150px;
+    justify-content: space-between;
+}
+
+.hud-buttons i{
+    font-size: 1.3em;
+}
