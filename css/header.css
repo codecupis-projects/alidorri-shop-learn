@@ -22,6 +22,7 @@
 
 .title{
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .title .page-width{
@@ -34,7 +35,7 @@
 }
 
 .hud-buttons{
-    width: 150px;
+    width: 200px;
     justify-content: space-between;
 }
 
