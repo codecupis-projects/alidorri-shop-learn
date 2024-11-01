@@ -2,7 +2,8 @@
     justify-content: center;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-bottom: rgb(239, 239, 239) solid 2px;
+    border-bottom: rgb(239, 239, 239) solid 1px;
+    height: 44.6px;
 }
 
 .header_top .page-width{
@@ -26,12 +27,29 @@
 }
 
 .title .page-width{
+    height: 100px;
+    padding-top: 30px;
+    align-items: flex-start;
+}
+
+.title .page-width > *{
+    top: 90px;
+    margin-top: 0px;
+}
+
+.social{
     justify-content: space-between;
-    padding: 20px;
+    width: 125px;
+    padding-top: 4px;
+}
+
+.social i{
+    color: #777777;
+    font-size: 0.98em;
 }
 
 .logo-corano{
-
+    
 }
 
 .hud-buttons{

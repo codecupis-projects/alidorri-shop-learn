@@ -13,6 +13,11 @@
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
   }
+
+  body, html, form{
+    margin: 0px;
+    padding: 0px;
+  }
   
   /* 5. Improve media defaults */
   img, picture, video, canvas, svg {
@@ -43,4 +48,9 @@
   */
   #root, #__next {
     isolation: isolate;
+  }
+
+  ul, li{
+    padding: 0px;
+    margin: 0px;
   }

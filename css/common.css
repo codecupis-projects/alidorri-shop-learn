@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0px;
+    justify-content: center;
 }
 
-.center{
+.flex-center{
     justify-content: center;
 }
 
@@ -38,18 +38,9 @@ button, .icon-button{
     align-items: center;
 }
 
-.social{
-    justify-content: space-between;
-    width: 140px;
-}
-
-.social i{
-    color: #777777;
-    font-size: 1em;
-}
-
 .drop-down{
     color: #222222;
+    transition: 0.5s;
 }
 
 .drop-down:hover{
@@ -59,4 +50,43 @@ button, .icon-button{
 
 .box-gray{
     background-color: rgb(245, 245, 245);
+}
+
+.relative{
+    display: static;
+    position: relative;
+}
+
+.absolute{
+    display: static;
+    position: absolute;
+}
+
+.width-zero{
+    width: 0px;
+}
+
+.height-zero{
+    height: 0px;
+}
+
+.size-zero{
+    width: 0px;
+    height: 0px;
+}
+
+.pivot-middle-center{
+    transform: translate(-50%, -50%);
+}
+
+.pivot-top-center{
+    transform: translate(-50%, 0%);
+}
+
+.pivot-top-left{
+    transform: translate(0%, 0%);
+}
+
+.pivot-top-right{
+    transform: translate(-100%, 0%);
 }
