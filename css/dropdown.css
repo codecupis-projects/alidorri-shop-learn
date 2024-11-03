@@ -2,7 +2,7 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    transform: translate(10px, 0);
+    transform: translate(0, 10px);
     transition: 0.5s;
     z-index: 10;
 }
@@ -30,10 +30,9 @@
 }
 
 .drop-down .container .drop-down-list li{
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 7px;
 }
 
 .drop-down .container .drop-down-list li:not(:last-of-type){
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px dotted #efefef;
 }

@@ -6,15 +6,18 @@
 @import url("nav.css");
 @import url("slider.css");
 @import url("banners.css");
+@import url("icons.css");
 
 .banners{
     width: 100%;
     height: 300px;
 }
 
-
-body{
+body {
     background-color: white;
-    height: 1000px;
-}
-
+    color: #555555;
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+  }

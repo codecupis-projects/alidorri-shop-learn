@@ -30,6 +30,11 @@
     padding-top: 10px;
 }
 
+.currency-language .drop-down-list li{
+    height: 36px;
+    line-height: 36px;
+}
+
 .title{
     justify-content: center;
     margin-bottom: 30px;
@@ -55,10 +60,6 @@
 .social i{
     color: #777777;
     font-size: 0.98em;
-}
-
-.logo-corano{
-    
 }
 
 .hud-buttons{
