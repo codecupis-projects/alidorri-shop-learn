@@ -1,11 +1,13 @@
 .nav-sticky{
     position: sticky;
     top: 0;
+    background-color: var(--back-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .main-nav{
     width: 450px;
-    padding-bottom: 20px;
 }
 
 .main-nav *{
