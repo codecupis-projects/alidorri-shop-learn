@@ -1,0 +1,36 @@
+.drop-down .container{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(10px, 0);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.drop-down:hover .container{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.5s;
+}
+
+.drop-down .container .drop-down-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: #efefef solid 1px;
+    background-color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: inherit;
+    height: max-content;
+}
+
+.drop-down .container .drop-down-list li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.drop-down .container .drop-down-list li:not(:last-of-type){
+    border-bottom: 1px solid #efefef;
+}

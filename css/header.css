@@ -1,24 +1,33 @@
-.header_top{
+.header-top{
     justify-content: center;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-bottom: rgb(239, 239, 239) solid 1px;
+    border-bottom: #efefef solid 1px;
     height: 44.6px;
 }
 
-.header_top .page-width{
+.header-top .page-width{
     justify-content: space-between;
 }
 
-.currency_language{
+.header-top *{
+    color: #555555;
+}
+
+.currency-language{
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.currency_language > div {
+.currency-language > div {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.currency-language .container{
+    width: 90px;
+    padding-top: 10px;
 }
 
 .title{

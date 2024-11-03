@@ -1,0 +1,12 @@
+.hover-bg{
+    transition: 0.5s;
+}
+
+.hover-bg:hover{
+    color: #edc36e;
+    transition: 0.5s;
+}
+
+.hover-bg li{
+    color: #555555;
+}

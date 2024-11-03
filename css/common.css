@@ -38,16 +38,6 @@ button, .icon-button{
     align-items: center;
 }
 
-.drop-down{
-    color: #222222;
-    transition: 0.5s;
-}
-
-.drop-down:hover{
-    color: #edc36e;
-    transition: 0.5s;
-}
-
 .box-gray{
     background-color: rgb(245, 245, 245);
 }
@@ -58,7 +48,6 @@ button, .icon-button{
 }
 
 .absolute{
-    display: static;
     position: absolute;
 }
 
