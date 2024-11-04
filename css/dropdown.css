@@ -34,5 +34,5 @@
 }
 
 .drop-down .container .drop-down-list li:not(:last-of-type){
-    border-bottom: 1px dotted #efefef;
+    border-bottom: 2px dotted #efefef;
 }
