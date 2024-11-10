@@ -1,0 +1,17 @@
+.slider{
+    width: 200%;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.slider div{
+    flex-grow: 1;
+    height: 100%;
+}

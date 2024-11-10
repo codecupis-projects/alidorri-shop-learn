@@ -1,0 +1,30 @@
+.banners{
+    width: 100%;
+    height: 530px;
+}
+
+.banners .slider div{
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.banners .slider div:nth-of-type(1){
+    background-image: url("/assets/images/home/home4-slide1.jpg");
+    order: 1;
+}
+
+.banners .slider div:nth-of-type(2){
+    background-image: url("/assets/images/home/home4-slide2.webp");
+    order: 2;
+}
+
+.banners .slider div:nth-of-type(3){
+    background-image: url("/assets/images/home/home1-slide1.webp");
+    order: 3;
+}
+
+.banners .slider div:nth-of-type(4){
+    background-image: url("/assets/images/home/home1-slide2.webp");
+    order: 4;
+}

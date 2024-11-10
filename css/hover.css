@@ -3,10 +3,10 @@
 }
 
 .hover-bg:hover{
-    color: #edc36e;
+    color: var(--color-text-gold);
     transition: 0.5s;
 }
 
 .hover-bg li{
-    color: #555555;
+    color: var(--color-text-gray);
 }
