@@ -6,7 +6,7 @@ const Direction = Object.freeze({
 });
 
 class Slider{
-    constructor(element, direction, loop = true, sliding = true, firstSlide = 0, autoSwitch = true, switchInterval = 3000,
+    constructor(element, direction, loop = true, sliding = false, firstSlide = 0, autoSwitch = true, switchInterval = 3000,
         switchDuration = 500, hasDrag = false){
         Object.assign(this, {
             element, direction, loop, sliding, firstSlide, autoSwitch, switchInterval, switchDuration, hasDrag
@@ -17,6 +17,11 @@ class Slider{
     }
 
     reset(){
+        if(this.sliding)
+            this.element.style.width = '200%';
+        else
+            this.element.style.width = '100%';
+
         this.setActiveSlide(this.firstSlide, true);
         if(this.autoSwitch)
             this.startAutoSwitch();
