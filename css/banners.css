@@ -28,3 +28,8 @@
     background-image: url("/assets/images/home/home1-slide2.webp");
     order: 4;
 }
+
+.banners .slider-buttons{
+    padding-left: 20px;
+    padding-right: 20px;
+}

@@ -116,12 +116,52 @@ class Slider{
 
 // ========== Slider Finding ==================
 
-sliders = document.getElementsByClassName('slider');
-if(sliders != null)
-    for(let i = 0; i < sliders.length; i++)
-        initSlider(sliders[i]);
+sliders = initSliders();
+initSlidersButtons(sliders);
 
-function initSlider(element){
+function initSliders(){
+    sliderElements = document.getElementsByClassName('slider');
+    sliders = {};
+    if(sliderElements != null)
+        for(let i = 0; i < sliderElements.length; i++)
+            initSlider(sliderElements[i], sliders);
+    return sliders;
+}
+
+function initSlider(element, sliders){
     const slider = new Slider(element, Direction.Horizontal);
     slider.reset();
+
+    if(element.dataset.slider !== undefined)
+        sliders[element.dataset.slider] = slider;
+}
+
+function initSlidersButtons(sliders){
+    buttonPairs = document.getElementsByClassName('slider-buttons');
+    if(buttonPairs != null)
+        for(let i = 0; i < buttonPairs.length; i++)
+            initSliderButtons(buttonPairs[i], sliders);
+}
+
+function initSliderButtons(buttons, sliders)
+{
+    if(buttons.dataset.slider === undefined)
+        return;
+
+    sliderKey = buttons.dataset.slider;
+    if(!(sliderKey in sliders))
+        return;
+
+    slider = sliders[sliderKey];
+    tryRegisterSliderButton(buttons, '.slider-prev', () => slider.previous());
+    tryRegisterSliderButton(buttons, '.slider-next', () => slider.next());
+}
+
+function tryRegisterSliderButton(buttons, childQuery, switchOperation)
+{
+    const child = buttons.querySelector(childQuery);
+    if(child === undefined)
+        return;
+
+    child.addEventListener("click", switchOperation);
 }
