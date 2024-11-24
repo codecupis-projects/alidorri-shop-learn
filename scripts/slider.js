@@ -111,6 +111,23 @@ class Slider{
             clearInterval(this.autoSwitching);
         this.autoSwitching = null;
     }
+
+    restartAutoSwitch(){
+        this.stopAutoSwitch();
+        this.startAutoSwitch();
+    }
+
+    nextManual(){
+        this.next();
+        if(this.autoSwitching)
+            this.restartAutoSwitch();
+    }
+
+    previousManual(){
+        this.previous();
+        if(this.autoSwitching)
+            this.restartAutoSwitch();
+    }
 }
 
 
@@ -153,8 +170,8 @@ function initSliderButtons(buttons, sliders)
         return;
 
     slider = sliders[sliderKey];
-    tryRegisterSliderButton(buttons, '.slider-prev', () => slider.previous());
-    tryRegisterSliderButton(buttons, '.slider-next', () => slider.next());
+    tryRegisterSliderButton(buttons, '.slider-prev', () => slider.previousManual());
+    tryRegisterSliderButton(buttons, '.slider-next', () => slider.nextManual());
 }
 
 function tryRegisterSliderButton(buttons, childQuery, switchOperation)
