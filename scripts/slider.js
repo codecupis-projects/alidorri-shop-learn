@@ -14,6 +14,14 @@ class Slider{
 
         this.activeIndex = firstSlide;
         this.autoSwitching = null;
+        this.initDisplays();
+    }
+
+    initDisplays(){
+        this.displays = [];
+        const childCount = this.element.childElementCount;
+        for (let i = 0; i < childCount; i++)
+            this.displays[i] = this.element.children[i].style.display;
     }
 
     reset(){
@@ -94,7 +102,7 @@ class Slider{
     }
 
     showSlide(index){
-        this.element.children[index].style.display = 'block';
+        this.element.children[index].style.display = this.displays[index];
     }
 
     hideSlide(index){

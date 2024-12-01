@@ -11,7 +11,7 @@
     flex-direction: row;
 }
 
-.slider div{
+.slider>div{
     flex-grow: 1;
     height: 100%;
 }
@@ -24,6 +24,7 @@
     top: 0;
     left: 0;
     z-index: 2;
+    pointer-events: none;
 }
 
 .slider-buttons{
@@ -33,4 +34,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.slider-prev, .slider-next{
+    pointer-events: all;
 }

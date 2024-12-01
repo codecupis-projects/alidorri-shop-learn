@@ -22,7 +22,7 @@ ul{
 }
 
 .page-width{
-    width: 1110px;
+    width: var(--page-width);
 }
 
 button, .icon-button{
