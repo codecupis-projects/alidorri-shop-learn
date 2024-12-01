@@ -74,3 +74,17 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.banners .slider-buttons .hover-bg{
+    color: #777777;
+}
+
+.banners .slider-buttons .hover-bg:hover{
+    color: var(--color-text-gold);
+    transition: 0.5s;
+}
+
+.banners .slider-buttons i{
+    font-size: 35px;
+    line-height: 1;
+}
