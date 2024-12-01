@@ -83,15 +83,28 @@ class Slider{
                 this.hideSlide(i);
             }
         
-        this.activateSlide(newIndex, isInitial);
         this.showSlide(newIndex);
+        if(isInitial)
+            this.activateSlideInitial(newIndex);
+        else
+            this.activateSlideNextFrame(newIndex);
     }
 
-    activateSlide(index, isInitial){
-        let activeName = isInitial ? 'active-initial' : 'active';
-        let otherName = !isInitial ? 'active-initial' : 'active';
+    activateSlideInitial(index){
+        this.activateSlide(index, "active");
+        this.activateSlide(index, "initial");
+    }
 
-        this.element.children[index].classList.remove(otherName);
+    // Activate next frame to apply transitions AFTER unsetting display from none.
+    activateSlideNextFrame(index){
+        setTimeout(() => this.activateSlideCurrent(index), 1);
+    }
+
+    activateSlideCurrent(index){
+        this.activateSlide(index, "active");
+    }
+
+    activateSlide(index, activeName){
         this.element.children[index].classList.remove(activeName);
         this.element.children[index].classList.add(activeName);
     }

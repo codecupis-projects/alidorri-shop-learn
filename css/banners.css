@@ -12,6 +12,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+}
+
+.banners .slide.active{
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.banners .slide.active.initial{
+    opacity: 1;
 }
 
 .banners .slide .content{
