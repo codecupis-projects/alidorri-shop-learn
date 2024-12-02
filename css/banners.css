@@ -37,18 +37,23 @@
 .banners .slide .slide-title{
     display: block;
     font-size: 60px;
+    font-weight: normal;
     color: #222222;
+    animation: banner-title-fade 0.4s ease-out, banner-title-bounce 2s linear;
 }
 
 .banners .slide .slide-title span{
     display: block;
 }
 
-.banners .slide .slide-description{
+.banners .slide .slide-desc{
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 20px;
+    font-weight: 300;
     color: #222222;
+    animation: banner-desc 1s cubic-bezier(.03,.76,.37,1.01) 1s;
+    animation-fill-mode: backwards;
 }
 
 .banners .slide .read-more{
@@ -59,10 +64,12 @@
     border-radius: 38px;
     padding: 14px 20px;
     font-size: 15px;
+    font-weight: 400;
     color: #fff;
     text-decoration: none;
     text-align: center;
     text-wrap: nowrap;
+    animation: banner-read-more 0.7s ease-out;
 }
 
 .banners .slider>div:nth-of-type(1){
@@ -97,4 +104,28 @@
 .banners .slider-buttons i{
     font-size: 35px;
     line-height: 1;
+}
+
+@keyframes banner-title-fade{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes banner-title-bounce{
+    0% {scale: 85%;}
+    12% {scale: 110%;}
+    24% {scale: 95%;}
+    44% {scale: 105%;}
+    64% {scale: 95%;}
+    100% {scale: 100%;}
+}
+
+@keyframes banner-desc{
+    from {translate: -100%;}
+    to {translate: 0%;}
+}
+
+@keyframes banner-read-more{
+    from {translate: 0% 40px; opacity: 0.3;}
+    to {translate: 0% 0px; opacity: 1;}
 }

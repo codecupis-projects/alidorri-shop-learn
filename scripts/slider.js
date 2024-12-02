@@ -6,7 +6,7 @@ const Direction = Object.freeze({
 });
 
 class Slider{
-    constructor(element, direction, loop = true, sliding = false, firstSlide = 0, autoSwitch = true, switchInterval = 3000,
+    constructor(element, direction, loop = true, sliding = false, firstSlide = 0, autoSwitch = true, switchInterval = 4000,
         switchDuration = 500, hasDrag = false){
         Object.assign(this, {
             element, direction, loop, sliding, firstSlide, autoSwitch, switchInterval, switchDuration, hasDrag
