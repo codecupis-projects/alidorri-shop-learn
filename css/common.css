@@ -1,3 +1,18 @@
+:root{
+    --color-back: white;
+    --color-box-gray: #f5f5f5;
+    --color-text-gray: #555555;
+    --color-text-gold: #edc36e;
+    --page-width: 1110px;
+    --font-default: "Lato", sans-serif;
+    --font-default-bold: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--font-default);
+    font-weight: normal;
+}
+
 .horizontal{
     display: flex;
     flex-direction: row;

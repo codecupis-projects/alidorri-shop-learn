@@ -1,5 +1,4 @@
 @import url("reset.css");
-@import url("defaults.css");
 @import url("common.css");
 @import url("header.css");
 @import url("hover.css");
@@ -9,20 +8,12 @@
 @import url("icons.css");
 @import url("banners.css");
 
-:root{
-    --color-back: white;
-    --color-box-gray: #f5f5f5;
-    --color-text-gray: #555555;
-    --color-text-gold: #edc36e;
-    --page-width: 1110px;
-}
-
 body {
     background-color: var(--color-back);
     color: #555555;
     line-height: 1.7;
     font-size: 14px;
     font-weight: 400;
-    font-family: "Lato", sans-serif;
+    font-family: --font-default;
     height: 1000px;
   }

@@ -5,13 +5,32 @@ const Direction = Object.freeze({
     Vertical: 1
 });
 
-class Slider{
-    constructor(element, direction, loop = true, sliding = false, firstSlide = 0, autoSwitch = true, switchInterval = 4000,
-        switchDuration = 500, hasDrag = false){
-        Object.assign(this, {
-            element, direction, loop, sliding, firstSlide, autoSwitch, switchInterval, switchDuration, hasDrag
-        })
+class SampleJafar{
+    abbas = 1;
+    heshmat = 3;
+    kazem = null;
+    mahmoud = undefined;
+    reza = "fdsf";
+    gholam = 3.4;
+}
 
+class Slider{
+
+    constructor(element, {
+        direction = Direction.Horizontal,
+        loop = true,
+        sliding = false,
+        firstSlide=  0,
+        autoSwitch = true,
+        switchInterval = 4000,
+        switchDuration = 500,
+        hasDrag = false
+        } = {})
+    {
+        Object.assign(this, {element, direction, loop, sliding, firstSlide, autoSwitch, switchInterval, switchDuration,
+            hasDrag
+        });
+        
         this.activeIndex = firstSlide;
         this.autoSwitching = null;
         this.initDisplays();
@@ -140,13 +159,13 @@ class Slider{
 
     nextManual(){
         this.next();
-        if(this.autoSwitching)
+        if(this.autoSwitching != null)
             this.restartAutoSwitch();
     }
 
     previousManual(){
         this.previous();
-        if(this.autoSwitching)
+        if(this.autoSwitching != null)
             this.restartAutoSwitch();
     }
 }
@@ -167,11 +186,11 @@ function initSliders(){
 }
 
 function initSlider(element, sliders){
-    const slider = new Slider(element, Direction.Horizontal);
+    const slider = new Slider(element, {direction: Direction.Horizontal});
     slider.reset();
 
-    if(element.dataset.slider !== undefined)
-        sliders[element.dataset.slider] = slider;
+    if(element.dataset.sliderId !== undefined)
+        sliders[element.dataset.sliderId] = slider;
 }
 
 function initSlidersButtons(sliders){
@@ -183,10 +202,10 @@ function initSlidersButtons(sliders){
 
 function initSliderButtons(buttons, sliders)
 {
-    if(buttons.dataset.slider === undefined)
+    if(buttons.dataset.sliderId === undefined)
         return;
 
-    sliderKey = buttons.dataset.slider;
+    sliderKey = buttons.dataset.sliderId;
     if(!(sliderKey in sliders))
         return;
 
